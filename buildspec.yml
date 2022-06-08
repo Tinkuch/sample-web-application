@@ -16,6 +16,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/my-app-1.0-SNAPSHOT.jar
-    - appspec.yml
+   - appspec.yml
+   - target/Spring3HibernateApp.war
   discard-paths: yes
