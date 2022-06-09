@@ -14,8 +14,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-artifacts:
-    files:
-   - */target/webApp.war
-   - appspec.yml
+artifacts: 
+  files:
+    - appspec.yml
+    - */target/webApp.war
   discard-paths: yes
