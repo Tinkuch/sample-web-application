@@ -16,6 +16,4 @@ phases:
       - echo Build completed on `date`
 artifacts: 
   files:
-    - appspec.yml
-    - target/webApp.war
-  discard-paths: yes
+    - **/*
