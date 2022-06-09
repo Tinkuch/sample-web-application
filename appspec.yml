@@ -1,22 +1,12 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /opt/tomcat/webapps/
-hooks:
-  BeforeInstall:
-    - location: Scripts/UnzipResourceBundle.sh
-    - location: Scripts/UnzipDataBundle.sh
-      runas: root
-  AfterInstall:
-    - location: Scripts/RunResourceTests.sh
-      timeout: 180
-      runas: root
-  ApplicationStart:
-    - location: Scripts/RunFunctionalTests.sh
-      timeout: 3600
-      runas: root
-  ValidateService:
-    - location: Scripts/MonitorService.sh
-      timeout: 3600
-      runas: root
+
+files: 
+  - source: / 
+    destination: opt/tomcat/webapps/
+
+permissions: 
+  - object: / 
+    pattern: "**" 
+    owner: tomcat 
+    group: tomcat
