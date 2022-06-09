@@ -5,19 +5,18 @@ files:
     destination: /opt/tomcat/webapps
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
+    - location: Scripts/UnzipResourceBundle.sh
+    - location: Scripts/UnzipDataBundle.sh
       runas: root
   AfterInstall:
-    - location: scripts/change_permissions.sh
-      timeout: 300
+    - location: Scripts/RunResourceTests.sh
+      timeout: 180
       runas: root
   ApplicationStart:
-    - location: scripts/start_server.sh
-    - location: scripts/create_test_db.sh
-      timeout: 300
+    - location: Scripts/RunFunctionalTests.sh
+      timeout: 3600
       runas: root
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 300
+  ValidateService:
+    - location: Scripts/MonitorService.sh
+      timeout: 3600
       runas: root
