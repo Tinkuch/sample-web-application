@@ -17,5 +17,5 @@ phases:
 artifacts:
   files:
    - appspec.yml
-   - target/Spring3HibernateApp.war
+   - target/webApp.war
   discard-paths: yes
