@@ -15,7 +15,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <properties>
+    <sonar.organization>criticalriver</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   <build>
-    <finalName>JavaWebApp</finalName>
+    <finalName>Java-WebApp</finalName>
   </build>
 </project>
