@@ -14,6 +14,7 @@ phases:
       - echo "stage pre_build completed"
   build:
     commands: 
+      - mvn verify 
       - mvn clean install -Powasp-dependency-check
       - echo "OWASP dependency check analysis status is completed..."; 
 artifacts:
