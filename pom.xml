@@ -15,6 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
   <plugin>
      <groupId>org.owasp</groupId>
      <artifactId>dependency-check-maven</artifactId>
@@ -37,9 +38,8 @@
      <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
      <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
      <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
-     <sonar.host.url>http://cr-devsecops-sonarqube.centralindia.cloudapp.azure.com/</sonar.host.url>
+     <sonar.host.url>http://54.242.252.172:9000/</sonar.host.url>
   </properties>
-  <build>
-    <finalName>JavaWebApp</finalName>
+     <finalName>JavaWebApp</finalName>
   </build>
 </project>
