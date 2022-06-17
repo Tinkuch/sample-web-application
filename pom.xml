@@ -26,19 +26,19 @@
         </formats>
      </configuration>
   </plugin>
-   <plugin>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.8.0.2131</version>
-   </plugin>
-   <properties>
-      <java.version>11</java.version>
-      <dependency-check-maven.version>6.1.1</dependency-check-maven.version>
-      <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
-      <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
-      <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
-      <sonar.host.url>http://cr-devsecops-sonarqube.centralindia.cloudapp.azure.com/</sonar.host.url>
-   </properties>
+  <plugin>
+     <groupId>org.sonarsource.scanner.maven</groupId>
+     <artifactId>sonar-maven-plugin</artifactId>
+     <version>3.8.0.2131</version>
+  </plugin>
+  <properties>
+     <java.version>11</java.version>
+     <dependency-check-maven.version>6.1.1</dependency-check-maven.version>
+     <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+     <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
+     <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
+     <sonar.host.url>http://cr-devsecops-sonarqube.centralindia.cloudapp.azure.com/</sonar.host.url>
+  </properties>
   <build>
     <finalName>JavaWebApp</finalName>
   </build>
