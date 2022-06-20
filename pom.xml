@@ -42,6 +42,6 @@
       <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
       <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
       <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
-      <sonar.host.url>http://54.242.252.172:9000/</sonar.host.url>
+      <sonar.host.url>http://18.208.245.210:9000/projects</sonar.host.url>
   </properties>
 </project>
