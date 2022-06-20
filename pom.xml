@@ -38,9 +38,9 @@
   </build>
   <properties>
       <java.version>11</java.version>
-      <dependency-check-maven.version>6.1.1</dependency-check-maven.version>
-      <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
-      <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
+      <dependency-check-maven.version>7.1.1</dependency-check-maven.version>
+      <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.host.url
+      <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.host.url
       <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
       <sonar.host.url>http://18.208.245.210:9000/projects</sonar.host.url>
   </properties>
