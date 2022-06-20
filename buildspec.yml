@@ -25,8 +25,8 @@ phases:
       - echo Build started on `date`
       - mvn clean install
       - mvn dependency-check:check 
-      - mvn sonar:sonar -Dsonar.projectKey=JavaWebApp -Dsonar.sources=. -Dsonar.host.url=http://18.208.245.210:9000/ -Dsonar.dependencyCheck.htmlReportPath=dependency-check-report.html
-      - mvn clean verify sonar:sonar -Dsonar.projectKey=JavaWebApp -Dsonar.host.url=$SONARQUBE_ENDPOINT -Dsonar.login=$SONARQUBE_TOKEN -Dsonar.dependencyCheck.reportPath=target/dependency-check-report.html
+      - mvn clean verify sonar:sonar -Dsonar.projectKey=JavaWebApp -Dsonar.sources=. -Dsonar.host.url=$SONARQUBE_ENDPOINT -Dsonar.login=$SONARQUBE_TOKEN -Dsonar.dependencyCheck.htmlReportPath=dependency-check-report.html
+      - mvn clean verify sonar:sonar -Dsonar.projectKey=JavaWebApp -Dsonar.host.url=$SONARQUBE_ENDPOINT -Dsonar.login=$SONARQUBE_TOKEN 
   post_build:
     commands:
       - echo Build completed on `date`
