@@ -13,4 +13,4 @@ phases:
         ./zap.sh -cmd -quickurl http://ec2-44-204-41-120.compute-1.amazonaws.com:8090/WebApp/ -quickprogress -quickout ../zap_report.html 
 artifacts:
   files:
-    - 'target/*'
+    - zap_report.html
