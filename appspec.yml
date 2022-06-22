@@ -3,7 +3,7 @@ os: linux
 
 files: 
   - source: / 
-    destination: opt/tomcat/webapps/
+    destination: tomcat/webapps/
 
 permissions: 
   - object: / 
